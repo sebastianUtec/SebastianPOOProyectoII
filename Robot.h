@@ -10,11 +10,17 @@ using namespace std;
 typedef string palabra;
 
 
-class Robot {
+class Robot: public objeto {
 private:
     palabra Nombre_R;
+    int numero_vidas;
+    int intensidad_de_Poder;
+    palabra material;
 public:
-    void set_Nombre_R(palabra Nombre_R){this->Nombre_R=Nombre_R;}
+    Robot(){};
+    void set_Nombre_R(palabra Nombre_R){this->Nombre_R=Nombre_R;
+    void danio();
+    void ataque();
 
 };
 
